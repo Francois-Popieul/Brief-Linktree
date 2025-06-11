@@ -5,7 +5,7 @@
    version="1.1"
    id="svg1"
    sodipodi:docname="email.svg"
-   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    inkscape:export-filename="email.png"
    inkscape:export-xdpi="47.020409"
    inkscape:export-ydpi="47.020409"
@@ -33,22 +33,22 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="6.078125"
      inkscape:cx="32.822622"
-     inkscape:cy="52.565553"
+     inkscape:cy="52.730077"
      inkscape:window-width="2560"
-     inkscape:window-height="1369"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" />
   <ellipse
-     style="fill:#b4adad;stroke-width:0.483681;fill-opacity:1"
+     style="fill:#edebd7;stroke-width:0.483681;fill-opacity:1"
      id="path5"
      cx="24"
      cy="23.510202"
      rx="24"
      ry="23.510202" />
   <rect
-     style="fill:#004455;stroke-width:86.998;paint-order:markers stroke fill"
+     style="fill:#e3b23c;stroke-width:86.998;paint-order:markers stroke fill;fill-opacity:1"
      id="rect1"
      width="29.387753"
      height="19.591837"
@@ -74,7 +74,7 @@
      inkscape:transform-center-x="7.5231025e-06" />
   <path
      sodipodi:type="star"
-     style="fill:#004455;stroke-width:188.976;paint-order:markers stroke fill"
+     style="fill:#e3b23c;stroke-width:188.976;paint-order:markers stroke fill;fill-opacity:1"
      id="path1-8"
      inkscape:flatsided="false"
      sodipodi:sides="3"
