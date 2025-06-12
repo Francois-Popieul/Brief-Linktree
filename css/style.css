@@ -1,4 +1,19 @@
 /* CSS Document*/
+
+/* ================================= */
+/*      Webfont: Luciole-Regular     */
+/* ================================= */
+@font-face {
+    font-family: 'Luciole';
+    src: url('../fonts/Luciole-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* ================================= */
+/*             selectors             */
+/* ================================= */
 html {
     scroll-behavior: smooth;
 }
@@ -8,48 +23,63 @@ html {
 }
 
 body {
-    background-color: #EDEBD7;
-    font-family: Arial, sans-serif;
+    background-color: #fff8dc;
+    font-family: 'Luciole', sans-serif;
     font-size: 16px;
     width: 100%;
     word-wrap: normal;
 }
 
+/* ================================= */
+/*               classes             */
+/* ================================= */
 .linktree {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
-    background: linear-gradient(#E3B23C, #EDEBD7);
+    background: linear-gradient(#13678A, #45C4B0);
     padding-bottom: 1rem;
-    border: #423E37 solid 2px;
     border-radius: 10px;
     width: 96%;
-    margin: 0 auto;
+    margin: 1% auto;
     box-sizing: border-box;
 }
 
-.header {
-    width: 98%;
-    background-color: #423E37;
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    color: #E3B23C;
+    width: 96%;
+    margin: 1% auto;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 98%;
+    background-color: #012030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #45C4B0;
+    border: #45C4B0 solid 2px;
     border-radius: 40px;
     box-sizing: border-box;
-    margin: 1% auto;
+    margin: 2% auto;
     padding: 10px 0;
 }
 
 .avatar {
+    border: #45C4B0 solid 2px;
     border-radius: 50%;
-    background-color: #EDEBD7;
-    width: 10rem;
-    height: 10rem;
+    background-color: #A4BEF3;
+    width: 8rem;
+    height: 8rem;
 }
 
 .main-character {
@@ -57,25 +87,54 @@ body {
 }
 
 .skill {
-    font-size: 0.75rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-variant: small-caps;
     text-align: center;
     margin: 0 auto;
 }
 
-.about {
-    color: #423E37;
-    padding-bottom: 5px;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.description {
-    color: #423E37;
-    padding: 10px;
+.about-description {
+    color: #012030;
+    padding: 20px;
     hyphens: auto;
     text-align: justify;
+}
+
+.space {
+    margin-bottom: 0.5em;
+}
+
+.section-title {
+    color: #012030;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 0.75rem;
+    font-variant: small-caps;
+}
+
+.formation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 1rem;
+    box-sizing: border-box;
+}
+
+.box {
+    font-weight: 600;
+    padding: 1rem;
+    background-color: #13678A;
+    color: #9AEBA3;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    text-overflow: ellipsis;
 }
 
 .contact {
@@ -92,12 +151,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.25rem;
-    background-color: #A39594;
-    color: #423E37;
-    width: 75px;
+    padding: 0.5rem;
+    background-color: #13678A;
+    color: #9AEBA3;
+    width: 80px;
     border-radius: 10px;
-    font-size: 0.75em;
+    font-size: 0.85em;
+    font-weight: 600;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -105,8 +165,8 @@ body {
 .small-logo {
     display: block;
     margin-bottom: 0.25rem;
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
 }
 
 .cta {
@@ -115,26 +175,29 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
-    background-color: #A39594;
-    color: #423E37;
-    border-radius: 10px;
+    background-color: #13678A;
+    color: #9AEBA3;
     width: 40%;
-    text-align: center;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: 600;
+    text-overflow: ellipsis;
     text-decoration: none;
     box-sizing: border-box;
 }
 
-.cta:active, .small-cta:active {
-    background-color: #6C5B7B;
-    color: #EDEBD7;
+.cta:active,
+.small-cta:active {
+    background-color: #9AEBA3;
+    color: #13678A;
     transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cta a {
+.cta,
+.small-cta a {
     text-decoration: none;
-    color: inherit;
 }
 
 .logo {
@@ -144,6 +207,9 @@ body {
     margin-right: 0.5rem;
 }
 
+/* ================================= */
+/*           media queries           */
+/* ================================= */
 @media screen and (min-width: 768px) {
     body {
         max-width: 600px;
@@ -154,31 +220,37 @@ body {
         width: 50%;
     }
 
-    .small-cta:hover, .cta:hover {
-        background-color: #6E675F;
-        color: #EDEBD7;
+    .small-cta:hover,
+    .cta:hover {
+        background-color: #9AEBA3;
+        color: #13678A;
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }    
+    }
 }
 
 @media screen and (min-width: 992px) {
     body {
         max-width: 700px;
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     body {
         max-width: 750px;
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .about-description {
+        hyphens: none;
     }
 }
 
 @media screen and (min-width: 1400px) {
     body {
         max-width: 800px;
-        font-size: 20px;
+        font-size: 24px;
     }
 }
