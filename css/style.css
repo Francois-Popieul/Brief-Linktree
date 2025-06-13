@@ -129,11 +129,13 @@ body {
     padding: 1rem;
     background-color: #012030;
     color: #9AEBA3;
-    width: 40%;
+    width: 25%;
+    box-shadow: 7px 7px 2px 1px #13678A;
     border-radius: 10px;
     text-align: center;
     font-weight: 500;
     text-overflow: ellipsis;
+    border-left: solid 10px #9AEBA3;
 }
 
 .contact {
